@@ -1,1 +1,1 @@
-waitress-serve --port=$PORT djangoherokuRefresh.wsgi:application
+web: waitress-serve --port=$PORT djangoherokuRefresh.wsgi:application
