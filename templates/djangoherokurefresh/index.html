@@ -8,7 +8,8 @@
     <title>loader django refresh heroku</title>
   </head>
   <body>
-    <form action="/view/" method="GET">
+    <form action="/view/" method="POST">
+      {% csrf_token %}
       <div class="row g-3">
         <div class="col">
           <input

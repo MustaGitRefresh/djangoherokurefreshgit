@@ -7,5 +7,4 @@ def home(request):
 
 
 def view(request):
-    print(request.GET.get("FirstName"))
-    return HttpResponse("done")
+    return HttpResponse(str(request.POST.get("FirstName")))
