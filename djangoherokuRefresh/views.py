@@ -6,4 +6,4 @@ def home(request):
 
 
 def view(request):
-    return render(request, 'djangoherokurefresh/views.html', {'name': request.GET.get('FirstName')})
+    return render(request, 'djangoherokurefresh/views.html', {'name': request.POST.get('FirstName')})
