@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 
 def home(request):
@@ -7,4 +6,4 @@ def home(request):
 
 
 def view(request):
-    return HttpResponse(str(request.POST.get("FirstName")))
+    return render(request, 'djangoherokurefresh/views.html', {'name': request.GET.get('FirstName')})
